@@ -27,6 +27,6 @@ func (cli *Client) SetDebugModel(debugModel bool) {
 	cli.debugMode = debugModel
 }
 
-func (cli *Client) SetMerchantInfo(merchant MerchantInfo) {
-	cli.Params.MerchantInfo = merchant
+func (cli *Client) SetMerchantId(merchantId string) {
+	cli.Params.MerchantId = merchantId
 }

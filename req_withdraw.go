@@ -18,7 +18,7 @@ func (cli *Client) WithdrawReq(req NePayWithdrawReq) (*NePayWithdrawRsp, error) 
 
 	params["scode"] = cli.Params.MerchantId
 	params["paytype"] = "card_to_card" // 卡对卡支付
-	params["notifyurl"] = cli.Params.MerchantInfo.WithdrawCallbackUrl
+	params["notifyurl"] = cli.Params.WithdrawCallbackUrl
 
 	//params转换map[string]interface{}格式
 	paramsMap := map[string]interface{}{}

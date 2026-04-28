@@ -1,10 +1,6 @@
 package go_nepay_goldflow
 
 type NePayInitParams struct {
-	MerchantInfo `yaml:",inline" mapstructure:",squash"`
-}
-
-type MerchantInfo struct {
 	MerchantId          string `json:"merchantId" mapstructure:"merchantId" config:"merchantId"  yaml:"merchantId"`                                     // 商户代号
 	HashKey             string `json:"hashKey" mapstructure:"hashKey" config:"hashKey"  yaml:"hashKey"`                                                 // hashKey
 	HashIv              string `json:"hashIv" mapstructure:"hashIv" config:"hashIv"  yaml:"hashIv"`                                                     // hashIv
