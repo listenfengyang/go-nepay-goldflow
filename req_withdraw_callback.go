@@ -19,7 +19,7 @@ func (cli *Client) WithdrawCallback(req NePayWithdrawCallbackReq, processor func
 	if !flag || err != nil {
 		//签名校验失败
 		reqJson, _ := json.Marshal(req)
-		cli.logger.Errorf("nepay withdraw back verify fail, req: %s", string(reqJson))
+		cli.logger.Errorf("nepay goldflow withdraw back verify fail, req: %s", string(reqJson))
 		return errors.New("sign verify error")
 	}
 

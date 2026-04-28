@@ -18,7 +18,7 @@ func (cli *Client) DepositCallback(req NePayDepositCallbackReq, processor func(N
 	if !flag || err != nil {
 		//签名校验失败
 		reqJson, _ := json.Marshal(req)
-		cli.logger.Errorf("nowPay deposit back verify fail, req: %s", string(reqJson))
+		cli.logger.Errorf("nepay goldflow deposit back verify fail, req: %s", string(reqJson))
 		return errors.New("sign verify error")
 	}
 

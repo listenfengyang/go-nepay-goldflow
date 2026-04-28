@@ -45,22 +45,21 @@ func TestCallback(t *testing.T) {
 	cli.logger.Infof("resp:%+v\n", err)
 }
 
-// { "memo": "", "sign": "A35168AB1C8FF9CEDFCACF49EADF68817991BE890314F96F1034A7B67704F8BC", "txid": "", "scode": "CPT", "amount": "2000", "status": 1, "orderid": "202612345678", "orderno": "PAY202604240844157956", "paytype": "card_to_card", "currency": "CNY", "respcode": "00", "resptime": "2026-04-24T08:58:37Z", "productname": "", "credit_amount": "2000" }
 func GenCallbackRequestDemo() NePayDepositCallbackReq {
 	return NePayDepositCallbackReq{
 		Scode:        "CPT",
-		OrderId:      "202612345678",
-		OrderNo:      "PAY202604240844157956",
+		OrderId:      "202604281013170136",
+		OrderNo:      "PAY202604280713171892",
 		PayType:      "card_to_card",
-		Amount:       "2000",
+		Amount:       "6844",
 		ProductName:  "",
 		Currency:     "CNY",
 		Memo:         "",
-		RespTime:     "2026-04-24T08:58:37Z",
+		RespTime:     "2026-04-28T07:28:37Z",
 		Status:       1,
 		RespCode:     "00",
 		TxId:         "",
-		CreditAmount: "2000",
-		Sign:         "A35168AB1C8FF9CEDFCACF49EADF68817991BE890314F96F1034A7B67704F8BC",
+		CreditAmount: "6844",
+		Sign:         "3C3E6C4ECD07AB7585009B49A252A692FE4240CBFA7F2570BB321212C3B10CEA",
 	}
 }

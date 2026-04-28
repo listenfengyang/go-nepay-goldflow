@@ -70,10 +70,10 @@ type NePayWithdrawReq struct {
 }
 
 type NePayWithdrawRsp struct {
-	Prc     string `json:"prc" mapstructure:"prc"`         // 状态
-	Errcode string `json:"errcode" mapstructure:"errcode"` // 请求结果码
-	Msg     string `json:"msg" mapstructure:"msg"`         // 请求结果消息
-	Orderno string `json:"orderno" mapstructure:"orderno"` // 系统交易序号
+	Prc     interface{} `json:"prc" mapstructure:"prc"`         // 状态
+	Errcode string      `json:"errcode" mapstructure:"errcode"` // 请求结果码
+	Msg     string      `json:"msg" mapstructure:"msg"`         // 请求结果消息
+	Orderno string      `json:"orderno" mapstructure:"orderno"` // 系统交易序号
 }
 
 // 入金回调
