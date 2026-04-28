@@ -34,7 +34,7 @@ type NePayDepositReq struct {
 }
 
 type NePayDepositRsp struct {
-	Status      int32  `json:"status" mapstructure:"status"`           // 状态
+	Status      string `json:"status" mapstructure:"status"`           // 状态
 	Respcode    string `json:"respcode" mapstructure:"respcode"`       // 请求结果码
 	Respmsg     string `json:"respmsg" mapstructure:"respmsg"`         // 请求结果消息
 	Scode       string `json:"scode" mapstructure:"scode"`             // 商户代号
