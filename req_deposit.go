@@ -19,7 +19,6 @@ func (cli *Client) Deposit(req NePayDepositReq) (*NePayDepositRsp, error) {
 
 	params["scode"] = cli.Params.MerchantId
 	params["redirectpage"] = "0"
-	params["paytype"] = "card_to_card"
 	params["noticeurl"] = cli.Params.ReturnUrl
 	params["callbackurl"] = cli.Params.DepositCallbackUrl
 

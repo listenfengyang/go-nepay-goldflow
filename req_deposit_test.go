@@ -36,5 +36,6 @@ func GenDepositRequestDemo() NePayDepositReq {
 		Userid:       "1234",
 		Accountname:  "简",
 		Payeraccount: "346236236",
+		Paytype:      "card_to_card", // 银联：card_to_card 支付宝：qr_pay
 	}
 }
