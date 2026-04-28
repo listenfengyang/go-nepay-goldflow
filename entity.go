@@ -34,18 +34,18 @@ type NePayDepositReq struct {
 }
 
 type NePayDepositRsp struct {
-	Status      string `json:"status" mapstructure:"status"`           // 状态
-	Respcode    string `json:"respcode" mapstructure:"respcode"`       // 请求结果码
-	Respmsg     string `json:"respmsg" mapstructure:"respmsg"`         // 请求结果消息
-	Scode       string `json:"scode" mapstructure:"scode"`             // 商户代号
-	Orderid     string `json:"orderid" mapstructure:"orderid"`         // 商户交易序号
-	Orderno     string `json:"orderno" mapstructure:"orderno"`         // 系统交易序号
-	Paytype     string `json:"paytype" mapstructure:"paytype"`         // 支付方式
-	Amount      string `json:"amount" mapstructure:"amount"`           // 支付金额
-	Productname string `json:"productname" mapstructure:"productname"` // 商品名称
-	Currency    string `json:"currency" mapstructure:"currency"`       // 支付币种
-	Memo        string `json:"memo" mapstructure:"memo"`               // 备注
-	Url         string `json:"url" mapstructure:"url"`                 // 跳转地址
+	Status      interface{} `json:"status" mapstructure:"status"`           // 状态
+	Respcode    string      `json:"respcode" mapstructure:"respcode"`       // 请求结果码
+	Respmsg     string      `json:"respmsg" mapstructure:"respmsg"`         // 请求结果消息
+	Scode       string      `json:"scode" mapstructure:"scode"`             // 商户代号
+	Orderid     string      `json:"orderid" mapstructure:"orderid"`         // 商户交易序号
+	Orderno     string      `json:"orderno" mapstructure:"orderno"`         // 系统交易序号
+	Paytype     string      `json:"paytype" mapstructure:"paytype"`         // 支付方式
+	Amount      string      `json:"amount" mapstructure:"amount"`           // 支付金额
+	Productname string      `json:"productname" mapstructure:"productname"` // 商品名称
+	Currency    string      `json:"currency" mapstructure:"currency"`       // 支付币种
+	Memo        string      `json:"memo" mapstructure:"memo"`               // 备注
+	Url         string      `json:"url" mapstructure:"url"`                 // 跳转地址
 	// 其他字段...
 	Bankname       string `json:"bankname" mapstructure:"bankname"`             // 收款银行名称
 	Bankno         string `json:"bankno" mapstructure:"bankno"`                 // 收款银行账号

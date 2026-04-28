@@ -30,7 +30,7 @@ func TestDeposit(t *testing.T) {
 
 func GenDepositRequestDemo() NePayDepositReq {
 	return NePayDepositReq{
-		Orderid:      "202612345678",
+		Orderid:      "2026123456782",
 		Amount:       "2000",
 		Currency:     "CNY",
 		Userid:       "1234",
