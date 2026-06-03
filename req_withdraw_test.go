@@ -30,11 +30,12 @@ func TestWithdraw(t *testing.T) {
 
 func GenWithdrawRequestDemo() NePayWithdrawReq {
 	return NePayWithdrawReq{
-		OrderId:     "23236326789",
-		Money:       "1000",
+		OrderId:     "23236326789221",
+		Money:       "1",
 		Currency:    "CNY",
 		AccountNo:   "42623612",
 		AccountName: "test",
+		BankName:    "招商银行",
 		BankNo:      "TH0001",
 	}
 }

@@ -56,12 +56,12 @@ type NePayDepositRsp struct {
 
 // nepay出金
 type NePayWithdrawReq struct {
-	Scode    string `json:"scode" mapstructure:"scode"`       // 厂商編號
-	OrderId  string `json:"orderid" mapstructure:"orderid"`   // 商户交易序号
-	Money    string `json:"money" mapstructure:"money"`       // 支付金额
-	Currency string `json:"currency" mapstructure:"currency"` // 支付币种
-	// BankName    string `json:"bankname" mapstructure:"bankname"`       // 收款银行名称
-	BankNo      string `json:"bankno" mapstructure:"bankno"`           // 收款银行账号
+	Scode       string `json:"scode" mapstructure:"scode"`             // 厂商編號
+	OrderId     string `json:"orderid" mapstructure:"orderid"`         // 商户交易序号
+	Money       string `json:"money" mapstructure:"money"`             // 支付金额
+	Currency    string `json:"currency" mapstructure:"currency"`       // 支付币种
+	BankName    string `json:"bankname" mapstructure:"bankname"`       // 收款银行名称
+	BankNo      string `json:"bankno" mapstructure:"bankno"`           //
 	AccountNo   string `json:"accountno" mapstructure:"accountno"`     // 付款人账号
 	AccountName string `json:"accountname" mapstructure:"accountname"` // 付款人姓名
 	PayType     string `json:"paytype" mapstructure:"paytype"`         // 支付方式
